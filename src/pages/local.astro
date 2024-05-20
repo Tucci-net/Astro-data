@@ -1,0 +1,27 @@
+---
+import json from 'src/data/lennylads.json';
+---
+
+<html lang="en">
+	<head>
+        
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+    
+    </head>
+	<body>
+        <style>
+            p { font-size: 2rem; }
+          </style>
+		{
+            lennyLads.json((lenny)=><p>{lenny.face}{lenny.name}</p>)
+        }
+
+		<nav>
+			<a href="./">Home</a>
+		</nav>
+	</body>
+</html>
